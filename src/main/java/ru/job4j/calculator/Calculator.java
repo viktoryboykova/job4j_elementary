@@ -1,18 +1,23 @@
 package ru.job4j.calculator;
 
 public class Calculator {
+
+    public static void plus(int first, int second) {
+        int result = first + second;
+        System.out.println(result);
+    }
+
+    public static void minus(int first, int second) {
+        int result = first - second;
+        System.out.println(result);
+    }
+
     public static void main(String[] args) {
-        int six = 6;
-        int two = 2;
-        int sixDivTwo = six / two;
-        System.out.println(sixDivTwo);
-        int five = 5;
-        int one = 1;
-        int fiveMinusOne = five - one;
-        System.out.println(fiveMinusOne);
-        int four = 4;
-        int seven = 7;
-        int fourTimeSeven = four * seven;
-        System.out.println(fourTimeSeven);
+        Calculator.plus(100, 500);
+        Calculator.plus(4, 2);
+        Calculator.plus(3, 5);
+        Calculator.minus(300, 100);
+        Calculator.minus(9, 6);
+        Calculator.minus(66, 50);
     }
 }
