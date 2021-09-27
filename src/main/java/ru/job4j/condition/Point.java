@@ -13,6 +13,5 @@ public class Point {
         double step2 = Math.pow(razn2, 2);
         double summa = step1 + step2;
         return Math.sqrt(summa);
-
     }
 }
