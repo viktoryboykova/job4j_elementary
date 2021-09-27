@@ -3,6 +3,10 @@ package ru.job4j.converter;
 public class Converter {
 
     public static void main(String[] args) {
+        float euro = Converter.rubleToEuro(8568);
+        float dollar = Converter.rubleToDollar(36500);
+        System.out.println("8568 rubles are " + euro + " euro.");
+        System.out.println("36500 rubles are " + dollar + " dollar.");
         float in1 = 8568;
         float expected1 = 100;
         float out1 = Converter.rubleToEuro(in1);
