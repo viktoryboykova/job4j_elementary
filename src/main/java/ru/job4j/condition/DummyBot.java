@@ -6,6 +6,8 @@ public class DummyBot {
         System.out.println(rsl);
         rsl = answer("Goodbye.");
         System.out.println(rsl);
+        rsl = answer("How are you?");
+        System.out.println(rsl);
     }
 
     public static String answer(String question) {
