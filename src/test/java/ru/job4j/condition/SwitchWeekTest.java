@@ -9,8 +9,8 @@ public class SwitchWeekTest {
 
     @Test
     public void when1thenMonday() {
-        int day = 1;
-        String expected = "Понедельник";
+        int day = 15;
+        String expected = "Ошибка";
         String out = SwitchWeek.nameOfDay(day);
         Assert.assertEquals(expected, out);
     }
