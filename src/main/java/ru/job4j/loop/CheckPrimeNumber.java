@@ -15,4 +15,27 @@ public class CheckPrimeNumber {
         }
         return prime;
     }
+
+    public static int calc(int finish) {
+        int count = 0;
+        for (int number = 1; number <= finish; number++) {
+            if (CheckPrimeNumber.check(number)) {
+                count += 1;
+            }
+        }
+        return count;
+    }
+
+    public static void main(String[] args) {
+        int finish = 5;
+        rez(finish);
+        finish = 11;
+        rez(finish);
+        finish = 2;
+        rez(finish);
+    }
+
+    private static void rez(int finish) {
+        System.out.println("Количество простых чисел от 1 до " + finish + " = " + calc(finish));
+    }
 }
